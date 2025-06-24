@@ -6,7 +6,7 @@ async function sendMessage() {
   document.getElementById("userInput").value = "";
 
   try {
-    const res = await fetch("http://localhost:5000/analyze", {
+    const res = await fetch("/analyze", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
